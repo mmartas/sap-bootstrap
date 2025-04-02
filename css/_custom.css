@@ -57,7 +57,9 @@ body {
     position: relative;
 }
 
-
+.fontSize4rem {
+    font-size: 4rem;
+}
 
 @media screen and (min-width: 991px){
     .dot::after {
@@ -71,7 +73,7 @@ body {
     }
 
     .dot:hover::after {
-        top: 25px;
+        top: 33px;
         opacity: 1;
         transition: all 0.1s ease-in-out;
     }

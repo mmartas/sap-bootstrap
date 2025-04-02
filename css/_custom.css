@@ -1,0 +1,78 @@
+.welcome-info {
+    background-image: url("../images/apple_background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+body {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --text-purple: #a303ff;
+    --background-dark: rgb(27,25,35);
+}
+
+.text-purple {
+    color: var(--text-purple);
+}
+
+.background-dark {
+    background-color: var(--background-dark);
+}
+
+.background-dark-hover:hover {
+    background-color: var(--background-dark);
+}
+
+.background-light-hover:hover {
+    background-color: #fff;
+}
+
+.text-dark-hover:hover {
+    color: rgb(27,25,35) !important;
+}
+
+.text-white-hover:hover {
+    color: #fff !important;
+}
+
+.border-dark {
+    border-color: var(--background-dark);
+}
+
+.scale-effect:hover {
+    cursor: pointer;
+    transform: scale(1.025);
+    transition: all 0.3s ease-in-out;
+}
+
+.transition {
+    transition: all 0.3s ease-in-out;
+}
+
+.position-relative {
+    position: relative;
+}
+
+
+
+@media screen and (min-width: 991px){
+    .dot::after {
+        content: "•";
+        position: absolute;
+        left: 50%;
+        top: 50px;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: all 0.1s ease-in-out;
+    }
+
+    .dot:hover::after {
+        top: 25px;
+        opacity: 1;
+        transition: all 0.1s ease-in-out;
+    }
+}

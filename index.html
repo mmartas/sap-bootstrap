@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/_custom.css">
     <link rel="icon" href="images/apple__logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Boldonse&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
@@ -18,22 +21,25 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav me-auto">
+                <ul class="navbar-nav me-auto small-nav-bar-display">
                     <li class="nav-item position-relative">
                         <a class="nav-link active text-white dot" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item position-relative">
-                        <a class="nav-link text-white dot" href="#bestsellersproducts">Produkty</a>
                     </li>
                     <li class="nav-item position-relative">
                         <a class="nav-link text-white dot" href="#aboutus">O nás</a>
                     </li>
                     <li class="nav-item position-relative">
+                        <a class="nav-link text-white dot" href="#bestsellersproducts">Produkty</a>
+                    </li>
+                    <li class="nav-item position-relative">
                         <a class="nav-link text-white dot" href="#feedback">Recenze</a>
                     </li>
+                    <li class="nav-item position-relative">
+                        <a class="nav-link text-white dot" href="#contact">Kontakt</a>
+                    </li>
                 </ul>
-              <div>
-                <button type="button" class="btn text-white border border-light background-light-hover text-dark-hover my-1 fs-5" data-bs-toggle="modal" data-bs-target="#adminModal">
+              <div class="small-nav-bar-display">
+                <button type="button" class="btn text-white border border-light background-light-hover text-dark-hover my-3 fs-5" data-bs-toggle="modal" data-bs-target="#adminModal">
                   Admin
                 </button>
               </div>
@@ -47,26 +53,26 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+        <h1 class="modal-title fs-2" id="exampleModalLabel">Login</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <form>
           <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Username</label>
+            <label for="exampleInputEmail1" class="form-label fs-3">Username</label>
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
           </div>
           <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <label for="exampleInputPassword1" class="form-label fs-3">Password</label>
             <input type="password" class="form-control" id="exampleInputPassword1">
           </div>
           <div class="mb-3 form-check">
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            <label class="form-check-label fs-3" for="exampleCheck1">Check me out</label>
           </div>
-          <button type="submit" class="btn btn-primary">
-            <a href="admin.html" class="nav-link text-white">Submit</a>
+          <button type="submit" class="btn border border-dark background-dark-hover ">
+            <a href="admin.html" class="nav-link text-dark fs-2 text-white-hover">Submit</a>
           </button>
         </form>
       </div>
@@ -87,28 +93,22 @@
 
     <section>
         <div class="container text-center" id="aboutus">
-            <h2 class="mt-5 text-decoration-underline">Technologie, která posouvá hranice...</h2>
-            <p class="fs-4"><br>
-
-                Apple není jen značka, je to životní styl. Od svého založení mění způsob, jakým komunikujeme, pracujeme a tvoříme. Každý produkt je navržen s důrazem na detail, výkon a jednoduchost, což zajišťuje dokonalý uživatelský zážitek.
-
-                iPhone předefinoval mobilní komunikaci, MacBook se stal synonymem pro produktivitu a kreativitu, a Apple Watch propojuje zdraví a technologie v jednom zařízení. Celý Apple ekosystém je navržen tak, aby vaše zařízení spolupracovala hladce a intuitivně – od iCloudu přes AirDrop až po Handoff.
-
-                Ať už hledáte spolehlivý telefon, výkonný notebook nebo dokonalou synergii mezi technologiemi, Apple nabízí to nejlepší. Přidejte se k milionům uživatelů po celém světě a zažijte inovace, které posouvají hranice možností.</p>
+            <h2 class="mt-5 mb-4 text-decoration-underline fs-1">Technologie, která posouvá hranice...</h2>
+            <p class="fs-3">Apple není jen značka, je to životní styl. Od svého založení mění způsob, jakým komunikujeme, pracujeme a tvoříme. Každý produkt je navržen s důrazem na detail, výkon a jednoduchost, což zajišťuje dokonalý uživatelský zážitek. iPhone předefinoval mobilní komunikaci, MacBook se stal synonymem pro produktivitu a kreativitu, a Apple Watch propojuje zdraví a technologie v jednom zařízení. Celý Apple ekosystém je navržen tak, aby vaše zařízení spolupracovala hladce a intuitivně – od iCloudu přes AirDrop až po Handoff. Ať už hledáte spolehlivý telefon, výkonný notebook nebo dokonalou synergii mezi technologiemi, Apple nabízí to nejlepší. Přidejte se k milionům uživatelů po celém světě a zažijte inovace, které posouvají hranice možností.</p>
         </div>
     </section>
 
     <section>
-        <div class="container px-4 text-center">
-            <h2 class="text-center m-5 text-black text-decoration-underline" id="bestsellersproducts">Podívej se na naše nejprodávanější produkty</h2>
+        <div class="container text-center">
+            <h2 class="text-center mt-5 mb-4 text-black text-decoration-underline fs-1" id="bestsellersproducts">Podívej se na naše nejprodávanější produkty</h2>
             <div class="row gx-5 gy-5">
                 <div class="col-lg-4">
                     <div class="card border-dark scale-effect transition">
                         <img src="images/watch.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Watch</h5>
-                            <p class="card-text">Chytré hodinky s elegantním designem, sledují zdraví, kondici a notifikace. Nabízejí EKG, měření kyslíku v krvi a fitness funkce.</p>
-                            <a href="#" class="btn border-dark background-dark-hover text-white-hover">Chci zjistit více</a>
+                            <h5 class="card-title fs-2">Watch</h5>
+                            <p class="card-text fs-4">Chytré hodinky s elegantním designem, sledují zdraví, kondici a notifikace. Nabízejí EKG, měření kyslíku v krvi a fitness funkce.</p>
+                            <a href="#" class="btn border-dark background-dark-hover text-white-hover fs-5">Chci zjistit více</a>
                         </div>
                     </div>
                 </div>
@@ -116,9 +116,9 @@
                     <div class="card border-dark scale-effect transition">
                         <img src="images/iphone2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">iPhone</h5>
-                            <p class="card-text">Výkonný smartphone s iOS, kvalitním fotoaparátem a ekosystémem Apple. Nabízí Face ID, 5G a dlouhou podporu aktualizací.</p>
-                            <a href="#" class="btn border-dark background-dark-hover text-white-hover">Chci zjistit více</a>
+                            <h5 class="card-title fs-2">iPhone</h5>
+                            <p class="card-text fs-4">Výkonný smartphone s iOS, kvalitním fotoaparátem a ekosystémem Apple. Nabízí Face ID, 5G a dlouhou podporu aktualizací.</p>
+                            <a href="#" class="btn border-dark background-dark-hover text-white-hover fs-5">Chci zjistit více</a>
                         </div>
                     </div>
                 </div>
@@ -126,9 +126,9 @@
                     <div class="card border-dark scale-effect transition">
                         <img src="images/airpods.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">AirPods</h5>
-                            <p class="card-text">Bezdrátová sluchátka s kvalitním zvukem, aktivním potlačením hluku a dlouhou výdrží baterie. Integrace se Siri a Apple zařízeními.</p>
-                            <a href="#" class="btn border-dark background-dark-hover text-white-hover">Chci zjistit více</a>
+                            <h5 class="card-title fs-2">AirPods</h5>
+                            <p class="card-text fs-4">Bezdrátová sluchátka s kvalitním zvukem, aktivním potlačením hluku a dlouhou výdrží baterie. Integrace se Siri a Apple zařízeními.</p>
+                            <a href="#" class="btn border-dark background-dark-hover text-white-hover fs-5">Chci zjistit více</a>
                         </div>
                     </div>
                 </div>
@@ -137,93 +137,110 @@
     </section>
 
     <section>
-        <div class="container text-center" id="feedback">
-            <h2 class="text-center m-5 text-black text-decoration-underline">Co řekli naši zákazníci o:</h2>
-            <div class="row d-flex justify-content-center gap-5">
-                <div class="border rounded-1 bg-light p-2 scale-effect transition">
-                        <h3 class="text-center m-0 p-2">Watches</h3>
-                        <div id="carouselExample" class="carousel slide ">
-                            <div class="carousel-inner text-center fs-5">
-                                <div class="carousel-item active">
-                                    <p class="d-block w-75 m-auto">Apple Watch jsou skvělé na sledování sportovních aktivit. Měřím si s nimi běh, cvičení i spánek. Motivují mě k pohybu a líbí se mi, jak jednoduše sledují srdeční tep nebo okysličení krve.</p>
-                                    <p class="fst-italic m-0 p-2">Tomáš Kučera</p>
-                                </div>
-                                <div class="carousel-item">
-                                    <p class="d-block w-75 m-auto">Díky Apple Watch už nemusím pořád vytahovat telefon z kapsy. Vidím všechny notifikace a dokonce mohu přijímat hovory přímo na hodinkách. Na cestách nebo při sportu je to neuvěřitelně praktické.</p>
-                                    <p class="fst-italic m-0 p-2">Jana Benešová</p>
-                                </div>
-                                <div class="carousel-item">
-                                    <p class="d-block w-75 m-auto">Líbí se mi, že si můžu snadno vyměnit řemínek a hodinky vždy sladit s oblečením. Elegantní design a kvalitní materiály dělají z Apple Watch nejen chytré zařízení, ale i luxusní doplněk.</p>
-                                    <p class="fst-italic m-0 p-2">Michal Veselý</p>
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev carousel-dark" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next carousel-dark" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
+        <div class="container container-sm" id="feedback">
+            <h2 class="text-center mt-5 mb-4 text-black text-decoration-underline fs-1">Co řekli naši zákazníci o:</h2>
+            <div class="border rounded-1 bg-light p-2 scale-effect transition col-lg-12 mb-3">
+                <h3 class="text-center m-0 p-2 fs-2">Watches</h3>
+                <div id="carouselExample" class="carousel slide ">
+                    <div class="carousel-inner text-center fs-5">
+                        <div class="carousel-item active">
+                            <p class="d-block w-75 m-auto fs-3">Apple Watch jsou skvělé na sledování sportovních aktivit. Měřím si s nimi běh, cvičení i spánek. Motivují mě k pohybu a líbí se mi, jak jednoduše sledují srdeční tep nebo okysličení krve.</p>
+                            <p class="fst-italic m-0 p-2">Tomáš Kučera</p>
                         </div>
-                </div>
-
-                <div class=" border bg-light rounded-1 p-2 scale-effect transition">
-                    <h3 class="text-center m-0 p-2">iPhones</h3>
-                    <div id="carouselExample1" class="carousel slide">
-                        <div class="carousel-inner text-center fs-5">
-                            <div class="carousel-item active">
-                                <p class="d-block w-75 m-auto">iPhone mě nikdy nezklamal. Rychlost systému, plynulost a bezpečnost jsou na úplně jiné úrovni než u jiných telefonů. Face ID funguje bezchybně a fotoaparát dělá úžasné snímky i za horších světelných podmínek.</p>
-                                <p class="fst-italic m-0 p-2">Lucie Králová</p>
-                            </div>
-                            <div class="carousel-item">
-                                <p class="d-block w-75 m-auto">Nejvíc oceňuji, jak iPhone perfektně spolupracuje s mým MacBookem a iPadem. Airdrop, iCloud a Handoff mi usnadňují práci každý den. Všechna data mám vždy po ruce a přechod mezi zařízeními je naprosto plynulý.</p>
-                                <p class="fst-italic m-0 p-2">David Malý</p>
-                            </div>
-                            <div class="carousel-item">
-                                <p class="d-block w-75 m-auto">Baterie vydrží celý den i při náročnějším používání. Oceňuji také pravidelné aktualizace iOS, díky kterým i starší modely fungují stále skvěle. iPhone mám už několik let a stále šlape jako nový.</p>
-                                <p class="fst-italic m-0 p-2">Veronika Horáková</p>
-                            </div>
+                        <div class="carousel-item">
+                            <p class="d-block w-75 m-auto fs-3">Díky Apple Watch už nemusím pořád vytahovat telefon z kapsy. Vidím všechny notifikace a dokonce mohu přijímat hovory přímo na hodinkách. Na cestách nebo při sportu je to neuvěřitelně praktické.</p>
+                            <p class="fst-italic m-0 p-2">Jana Benešová</p>
                         </div>
-                        <button class="carousel-control-prev carousel-dark" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next carousel-dark" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                        <div class="carousel-item">
+                            <p class="d-block w-75 m-auto fs-3">Líbí se mi, že si můžu snadno vyměnit řemínek a hodinky vždy sladit s oblečením. Elegantní design a kvalitní materiály dělají z Apple Watch nejen chytré zařízení, ale i luxusní doplněk.</p>
+                            <p class="fst-italic m-0 p-2">Michal Veselý</p>
+                        </div>
                     </div>
-                </div>
-
-                <div class=" border bg-light rounded-1 p-2 scale-effect transition">
-                    <h3 class="text-center m-0 p-2">AirPods</h3>
-                    <div id="carouselExample2" class="carousel slide">
-                        <div class="carousel-inner text-center fs-5">
-                            <div class="carousel-item active">
-                                <p class="d-block w-75 m-auto">AirPods jsou nejpohodlnější sluchátka, jaké jsem kdy měl. Automatické připojení k iPhonu je bleskové a zvuk je čistý, s bohatými basy. Bez kabelů je to úplně jiný level poslechu.</p>
-                                <p class="fst-italic m-0 p-2">Jakub Novák</p>
-                            </div>
-                            <div class="carousel-item">
-                                <p class="d-block w-75 m-auto">S AirPods Pro mohu úplně vypnout okolní svět a soustředit se na hudbu nebo práci. Naopak režim propustnosti mi umožní slyšet okolí, když potřebuji – například při běhu venku.</p>
-                                <p class="fst-italic m-0 p-2">Petra Dvořáková</p>
-                            </div>
-                            <div class="carousel-item">
-                                <p class="d-block w-75 m-auto">Pouzdro udrží sluchátka nabitá na celý den. Rychlé nabíjení přes Lightning nebo MagSafe je super praktické. Stačí pár minut v pouzdře a mám energii na další hodiny poslechu.</p>
-                                <p class="fst-italic m-0 p-2"> Adam Svoboda</p>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev carousel-dark" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next carousel-dark" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
+                    <button class="carousel-control-prev carousel-dark" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next carousel-dark" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
+
+            <div class="border bg-light rounded-1 p-2 scale-effect transition col-lg-12 mb-3">
+                <h3 class="text-center m-0 p-2 fs-2">iPhones</h3>
+                <div id="carouselExample1" class="carousel slide">
+                    <div class="carousel-inner text-center fs-5">
+                        <div class="carousel-item active">
+                            <p class="d-block w-75 m-auto fs-3">iPhone mě nikdy nezklamal. Rychlost systému, plynulost a bezpečnost jsou na úplně jiné úrovni než u jiných telefonů. Face ID funguje bezchybně a fotoaparát dělá úžasné snímky.</p>
+                            <p class="fst-italic m-0 p-2">Lucie Králová</p>
+                        </div>
+                        <div class="carousel-item">
+                            <p class="d-block w-75 m-auto fs-3">Nejvíc oceňuji, jak iPhone perfektně spolupracuje s mým MacBookem a iPadem. Airdrop mi usnadňuje práci každý den. Všechna data mám vždy po ruce a přechod mezi zařízeními je naprosto plynulý.</p>
+                            <p class="fst-italic m-0 p-2">David Malý</p>
+                        </div>
+                        <div class="carousel-item">
+                            <p class="d-block w-75 m-auto fs-3">Baterie vydrží celý den i při náročnějším používání. Oceňuji také pravidelné aktualizace iOS, díky kterým i starší modely fungují stále skvěle. iPhone mám už několik let a stále šlape jako nový.</p>
+                            <p class="fst-italic m-0 p-2">Veronika Horáková</p>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev carousel-dark" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next carousel-dark" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="border bg-light rounded-1 p-2 scale-effect transition col-lg-12 mb-3">
+                <h3 class="text-center m-0 p-2 fs-2">AirPods</h3>
+                <div id="carouselExample2" class="carousel slide">
+                    <div class="carousel-inner text-center fs-5">
+                        <div class="carousel-item active">
+                            <p class="d-block w-75 m-auto fs-3">AirPods jsou nejpohodlnější sluchátka, jaké jsem kdy měl. Automatické připojení k iPhonu je bleskové a zvuk je čistý, s bohatými basy. Bez kabelů je to úplně jiný level poslechu.</p>
+                            <p class="fst-italic m-0 p-2">Jakub Novák</p>
+                        </div>
+                        <div class="carousel-item">
+                            <p class="d-block w-75 m-auto fs-3">S AirPods Pro mohu úplně vypnout okolní svět a soustředit se na hudbu nebo práci. Naopak režim propustnosti mi umožní slyšet okolí, když potřebuji – například při běhu venku.</p>
+                            <p class="fst-italic m-0 p-2">Petra Dvořáková</p>
+                        </div>
+                        <div class="carousel-item">
+                            <p class="d-block w-75 m-auto fs-3">Pouzdro udrží sluchátka nabitá na celý den. Rychlé nabíjení přes Lightning nebo MagSafe je super praktické. Stačí pár minut v pouzdře a mám energii na další hodiny poslechu.</p>
+                            <p class="fst-italic m-0 p-2"> Adam Svoboda</p>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev carousel-dark" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next carousel-dark" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container col-lg-12 mx-auto" id="contact">
+            <form class="w-75 mx-auto">
+                <h2 class="text-center mt-5 mb-4 text-black text-decoration-underline fs-1">Máš dotaz? Zanech nám zprávu!</h2>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label fs-2">Tvoje emailová adresa:</label>
+                    <input type="email" class="form-control fs-3" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label fs-2">Tvoje otázka:</label>
+                    <textarea class="form-control fs-3" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="text-center">
+                    <button class="btn border border-dark text-dark background-dark-hover text-white-hover fs-3" type="submit">Submit form</button>
+                </div>
+            </form>
         </div>
     </section>
 </main>

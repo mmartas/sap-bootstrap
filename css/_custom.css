@@ -8,6 +8,7 @@
 body {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 :root {
@@ -62,6 +63,30 @@ body {
 }
 
 @media screen and (min-width: 991px){
+    .dot::after {
+        content: "•";
+        position: absolute;
+        left: 50%;
+        top: 50px;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: all 0.1s ease-in-out;
+    }
+
+    .dot:hover::after {
+        top: 33px;
+        opacity: 1;
+        transition: all 0.1s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .small-nav-bar-display {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .dot::after {
         content: "•";
         position: absolute;

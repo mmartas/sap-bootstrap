@@ -15,7 +15,7 @@
 <header>
     <nav class="navbar navbar-expand-lg background-dark">
         <div class="container-fluid fs-4">
-            <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+            <a class="navbar-brand scale-effect transition" href="index.html"><img src="images/logo.png" alt=""></a>
             <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -47,49 +47,44 @@
         </div>
     </nav>
 </header>
-
-<!-- Modal -->
-<div class="modal fade" id="adminModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-2" id="exampleModalLabel">Login</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label fs-3">Username</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label fs-3">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-          </div>
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label fs-3" for="exampleCheck1">Check me out</label>
-          </div>
-          <button type="submit" class="btn border border-dark background-dark-hover ">
-            <a href="admin.html" class="nav-link text-dark fs-2 text-white-hover">Submit</a>
-          </button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-
-
 <main>
+    <!-- Modal Admin-->
+    <div class="modal fade" id="adminModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-2" id="exampleModalLabel">Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label fs-3">Username</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label fs-3">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label fs-3" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn border border-dark background-dark-hover ">
+                            <a href="admin.html" class="nav-link text-dark fs-2 text-white-hover">Submit</a>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <section class="welcome-info d-flex align-items-baseline pt-5">
         <div class="container text-center p-5 text-black">
             <h1 class="fontSize4rem">Vstupte do světa moderních technologií!</h1>
             <p class="fs-1">Bezkonkurenční pomocníci pro každodenní život.</p>
         </div>
     </section>
-
-
 
     <section>
         <div class="container text-center" id="aboutus">
@@ -112,6 +107,9 @@
                         </div>
                     </div>
                 </div>
+                <!--Modal Watch-->
+
+
                 <div class="col-lg-4">
                     <div class="card border-dark scale-effect transition">
                         <img src="images/iphone2.jpg" class="card-img-top" alt="...">
@@ -166,7 +164,6 @@
                     </button>
                 </div>
             </div>
-
             <div class="border bg-light rounded-1 p-2 scale-effect transition col-lg-12 mb-3">
                 <h3 class="text-center m-0 p-2 fs-2">iPhones</h3>
                 <div id="carouselExample1" class="carousel slide">
@@ -194,7 +191,6 @@
                     </button>
                 </div>
             </div>
-
             <div class="border bg-light rounded-1 p-2 scale-effect transition col-lg-12 mb-3">
                 <h3 class="text-center m-0 p-2 fs-2">AirPods</h3>
                 <div id="carouselExample2" class="carousel slide">
